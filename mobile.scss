@@ -1,0 +1,25 @@
+.block {
+  &-header {
+    align-items: center;
+    &__logo {
+      a {
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .main-text {
+    font-size: 0.5em;
+  }
+}
+.download {
+  &-dwnldicon {
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.9);
+    &-button {
+      padding-top: 35px;
+    }
+  }
+}

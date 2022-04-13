@@ -1,0 +1,889 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url(./support.css);
+* {
+  margin-top: 0;
+  margin-left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 524px) {
+  .block-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-header__logo a img {
+    width: 100px;
+  }
+  .block .main-text {
+    font-size: 0.5em;
+  }
+  .download-dwnldicon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .download-dwnldicon-button {
+    padding-top: 35px;
+  }
+}
+
+.block {
+  background-color: #1a1d22;
+  overflow: hidden;
+  padding: 50px 38px 0px;
+}
+
+.block-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-header__menu {
+  cursor: pointer;
+  font-family: "poppins";
+  font-size: 24px;
+  color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-header__menu a {
+  text-decoration: none;
+}
+
+.block-header__menu .popUp.active {
+  display: block;
+}
+
+.block-header__menu .popUp {
+  width: 100%;
+  display: none;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.block-header__menu .popUp-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.block-header__menu .popUp-container-body {
+  margin: auto;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 15px 110px 15px;
+  position: relative;
+}
+
+.block-header__menu .popUp-container-body-title {
+  font-size: 28px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  color: #1a1d22;
+  margin-bottom: 66px;
+}
+
+.block-header__menu .popUp-container-body form input {
+  display: block;
+  margin: 25px auto 0px auto;
+  width: 330px;
+  padding: 17px 20px;
+  background: #abafb7;
+  border-radius: 25px;
+  border: none;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.block-header__menu .popUp-container-body form input:focus {
+  outline: none;
+}
+
+.block-header__menu .popUp-container-body form button {
+  cursor: pointer;
+  display: block;
+  width: 330px;
+  margin: 60px auto 0px auto;
+  padding: 20px 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #20bb5d;
+}
+
+.block-header__menu .popUp-container-body-close {
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+  font-size: 21px;
+  right: 15px;
+  color: #000;
+}
+
+.block-header__menu .button {
+  text-decoration: none;
+}
+
+.block-header__menu .openPopUp {
+  text-decoration: none;
+}
+
+.block-header__menu .menu-item {
+  padding-left: 60px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.block-header__menu .menu-item.__button {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 14px 48px;
+  background-color: #1eb858;
+  border-radius: 50px;
+}
+
+.block-header__menu .menu-item.__button:hover {
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #289251;
+}
+
+.block-header__menu .menu-item:hover {
+  color: #ebc294;
+}
+
+.block .main-text {
+  text-align: center;
+  padding-top: 21%;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #ffff;
+}
+
+.block .main-text__green {
+  color: green;
+}
+
+.block .bacground-text {
+  font-size: 570px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #1f2227;
+  text-shadow: 0px 10px 200px black;
+  margin-top: 70px;
+  letter-spacing: 120px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.block .three-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -400px;
+}
+
+.block .three-block__first {
+  width: 600px;
+  height: 870px;
+}
+
+.block .three-block__first img {
+  width: 100%;
+  height: 100%;
+}
+
+.block .three-block-iphone {
+  position: relative;
+  width: 600px;
+  height: 870px;
+}
+
+.block .three-block-iphone__six {
+  position: absolute;
+  -webkit-transform: translate(50%, -174px);
+          transform: translate(50%, -174px);
+  right: 50%;
+  z-index: 1;
+  width: 815px;
+  height: 1070px;
+}
+
+.block .three-block-iphone__second {
+  width: 600px;
+  height: 870px;
+  background-color: #1a51ff;
+  z-index: 0;
+}
+
+.block .three-block-iphone__second img {
+  width: 100%;
+  height: 100%;
+}
+
+.block .three-block__three {
+  width: 600px;
+  height: 870px;
+  background-color: #20bb5d;
+}
+
+.block .three-block__three img {
+  width: 100%;
+  height: 100%;
+}
+
+.download {
+  background-color: #f7f7f7;
+}
+
+.download-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 95px;
+}
+
+.download-header__under {
+  color: #abafb7;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+}
+
+.download-header__green {
+  color: #1eb858;
+}
+
+.download-dwnldicon {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.2s all ease-in-out;
+}
+
+.download-dwnldicon-button {
+  text-decoration: none;
+}
+
+.download-dwnldicon__gplay {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  height: 130px;
+  width: 450px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  background-image: url(/pic/download/icon.png);
+  background-repeat: no-repeat;
+  background-position: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+}
+
+.download-dwnldicon__gplay__h1 {
+  color: #abafb8;
+  font-family: "Poppins regular";
+  font-size: 25px;
+}
+
+.download-dwnldicon__gplay__gp {
+  font-size: 45px;
+  color: #000;
+}
+
+.download-dwnldicon__gplay:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.download-dwnldicon__macappstore {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  height: 130px;
+  width: 450px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  background-image: url(/pic/download/iconmac.png);
+  background-repeat: no-repeat;
+  background-position: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 120px;
+}
+
+.download-dwnldicon__macappstore__h1 {
+  color: #abafb8;
+  font-family: "Poppins regular";
+  font-size: 25px;
+}
+
+.download-dwnldicon__macappstore__gp {
+  font-size: 45px;
+  color: #000;
+}
+
+.download-dwnldicon__macappstore:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.download-dwnldicon__appstore {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  height: 130px;
+  width: 450px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  background-image: url(/pic/download/iconappstore.png);
+  background-repeat: no-repeat;
+  background-position: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+
+.download-dwnldicon__appstore__h1 {
+  color: #abafb8;
+  font-family: "Poppins regular";
+  font-size: 25px;
+}
+
+.download-dwnldicon__appstore__gp {
+  font-size: 45px;
+  color: #000;
+}
+
+.download-dwnldicon__appstore:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.download-dwnldicon:hover {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  scale: 1.1;
+}
+
+.download__hole {
+  padding-top: 200px;
+}
+
+.block-wrapper {
+  overflow: hidden;
+}
+
+.block3 {
+  padding: 200px 0 0 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block3-pic {
+  position: absolute;
+  background: #29b865;
+  width: 100%;
+  top: 90%;
+  height: 175px;
+  -webkit-transform: rotate(-31.5deg) scale(2.1);
+          transform: rotate(-31.5deg) scale(2.1);
+  z-index: -1;
+}
+
+.block3-right {
+  padding-top: 100px;
+}
+
+.block3-right__head {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.block3-right__underhead {
+  font-family: "Poppins regular";
+  color: #abafb7;
+  font-size: 27px;
+}
+
+.block3-right-table {
+  padding-top: 20px;
+  line-height: 1.5;
+  font-family: "Poppins regular";
+  font-size: 25px;
+}
+
+.block3-right-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.block3-right .galochka {
+  color: #20bb5d;
+  display: inline;
+}
+
+.block3-right-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.block3-right-block {
+  background: #1a51ff;
+  width: 451px;
+  height: 800px;
+  -webkit-box-shadow: 0 0 10px #1a1d22;
+          box-shadow: 0 0 10px #1a1d22;
+}
+
+.block3-right-block.__back {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 0;
+}
+
+.block3-right-block.__back img {
+  width: 100%;
+  height: 100%;
+}
+
+.block3-right-block.__front {
+  position: absolute;
+  right: 50%;
+}
+
+.block3-right-block.__front img {
+  width: 100%;
+  height: 100%;
+}
+
+.block4 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 200px 90px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block4-left {
+  width: 877px;
+  height: 758px;
+  padding-top: 100px;
+}
+
+.block4-left-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.block4-left-underhead {
+  font-family: "Poppins regular";
+  color: #abafb7;
+  font-size: 27px;
+}
+
+.block4-left-list {
+  padding-top: 70px;
+}
+
+.block4-left-list img {
+  width: 900px;
+}
+
+.block4-left-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.block4-left-block {
+  background: #1a51ff;
+  width: 451px;
+  height: 800px;
+  -webkit-box-shadow: 0 0 10px #1a1d22;
+          box-shadow: 0 0 10px #1a1d22;
+}
+
+.block4-left-block.__back {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 0;
+}
+
+.block4-left-block.__back img {
+  width: 100%;
+  height: 100%;
+}
+
+.block4-left-block.__front {
+  position: absolute;
+  left: 50%;
+}
+
+.block4-left-block.__front img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-app .block5 {
+  text-align: center;
+  padding: 200px 0 0 0;
+  width: 100%;
+}
+
+.our-app .block5-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.our-app .block5-header.__green {
+  color: #1eb858;
+}
+
+.our-app .block5-under {
+  color: #abafb7;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.our-app .block5-back {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6%;
+}
+
+.our-app .block5-back_item {
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 25px 56px 22px 18px;
+  width: 33%;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 3px solid #1eb85800;
+}
+
+.our-app .block5-back_item:hover {
+  border-bottom: 3px solid #1eb858;
+}
+
+.our-app .block5-back_item img {
+  height: 100%;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 200px 0;
+}
+
+.stats-header {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.stats-header-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.stats-header-title b {
+  color: #1eb858;
+}
+
+.stats-header-subtitle {
+  color: #abafb7;
+  font-size: 25px;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.stats-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+.stats-about_info {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  height: 400px;
+  width: 30%;
+  color: #000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  margin-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 4px solid #1eb858;
+}
+
+.stats-info_title {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 70px;
+  color: #1eb858;
+  font-weight: bolder;
+}
+
+.twitter {
+  position: relative;
+  background: #1a51ff;
+  height: 500px;
+}
+
+.twitter-logo {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  position: absolute;
+  height: 35px;
+  width: 109px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(175px, -50%);
+          transform: translate(175px, -50%);
+}
+
+.twitter-logo_text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffff;
+  background: url(/pic/twitter.png);
+}
+
+.twitter-logo_text img {
+  width: 20px;
+  height: auto;
+}
+
+.twitter-about {
+  width: 530px;
+}
+
+.twitter-about-pic img {
+  width: 1%;
+  position: absolute;
+  top: 43%;
+  left: 35%;
+}
+
+.twitter-about-text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 515px;
+}
+
+.twitter-about-text-info {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  height: 300px;
+  position: relative;
+}
+
+.footer-descriptions {
+  position: absolute;
+  top: 33%;
+  left: 180px;
+  width: 735px;
+}
+
+.footer-descriptions_text {
+  padding-top: 15px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.footer-about {
+  width: 350px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 33%;
+  right: 5%;
+}
+
+.footer-about-left_info {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding-top: 25px;
+  -webkit-text-decoration: underline #abafb7;
+          text-decoration: underline #abafb7;
+}
+
+.footer-about-right_info {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding-top: 25px;
+  -webkit-text-decoration: underline #abafb7;
+          text-decoration: underline #abafb7;
+}
+/*# sourceMappingURL=projectfigma.css.map */

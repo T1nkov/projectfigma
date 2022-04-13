@@ -1,0 +1,23 @@
+.f {
+  display: flex;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
