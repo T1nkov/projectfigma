@@ -9,10 +9,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 @import url(./support.css);
 
-@media screen and (max-width: 524px) {
-  @import "mobile.scss";
-}
-
 .block {
   background-color: #1a1d22;
   overflow: hidden;
@@ -431,7 +427,26 @@
       color: #abafb7;
       font-size: 27px;
     }
-
+    &-pictures {
+      &__one {
+        transition: 0.2s all ease-in-out;
+      }
+      &__one:hover {
+        transform: scale(1.1);
+      }
+      &__two {
+        transition: 0.2s all ease-in-out;
+      }
+      &__two:hover {
+        transform: scale(1.1);
+      }
+      &__three {
+        transition: 0.2s all ease-in-out;
+      }
+      &__three:hover {
+        transform: scale(1.1);
+      }
+    }
     &-table {
       padding-top: 20px;
       line-height: 1.5;
@@ -501,6 +516,24 @@
       font-size: 27px;
     }
     &-list {
+      &__one {
+        transition: 0.2s all ease-in-out;
+      }
+      &__one:hover {
+        transform: scale(1.1);
+      }
+      &__two {
+        transition: 0.2s all ease-in-out;
+      }
+      &__two:hover {
+        transform: scale(1.1);
+      }
+      &__three {
+        transition: 0.2s all ease-in-out;
+      }
+      &__three:hover {
+        transform: scale(1.1);
+      }
       & img {
         width: 900px;
       }
@@ -567,7 +600,7 @@
         font-family: "Trebuchet MS", sans-serif;
         padding: 25px 56px 22px 18px;
         width: 33%;
-        transition: 0.2s all ease-in-out;
+        transition: border 0.2s;
 
         border-bottom: 3px solid #1eb85800;
         &:hover {
@@ -741,4 +774,8 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 524px) {
+  @import "mobile.scss";
 }

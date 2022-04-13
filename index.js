@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 const openPopUp = document.getElementById('openPopUp')
 const closePopUp = document.getElementById('closePopUp')
 const popUp = document.getElementById('popUp')

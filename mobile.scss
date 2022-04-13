@@ -10,16 +10,29 @@
     }
   }
   .main-text {
-    font-size: 0.5em;
+    font-size: 25px;
+  }
+  .three-block {
+    max-width: 100%;
   }
 }
 .download {
+  &__hole {
+    padding-top: 100px;
+  }
   &-dwnldicon {
     flex-direction: column;
     align-items: center;
     transform: scale(0.9);
+    margin-top: 0;
     &-button {
       padding-top: 35px;
+    }
+  }
+  &-header {
+    font-size: 27px;
+    &__under {
+      font-size: 18px;
     }
   }
 }

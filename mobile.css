@@ -9,7 +9,15 @@
 }
 
 .block .main-text {
-  font-size: 0.5em;
+  font-size: 25px;
+}
+
+.block .three-block {
+  max-width: 100%;
+}
+
+.download__hole {
+  padding-top: 100px;
 }
 
 .download-dwnldicon {
@@ -22,9 +30,18 @@
           align-items: center;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  margin-top: 0;
 }
 
 .download-dwnldicon-button {
   padding-top: 35px;
+}
+
+.download-header {
+  font-size: 27px;
+}
+
+.download-header__under {
+  font-size: 18px;
 }
 /*# sourceMappingURL=mobile.css.map */
